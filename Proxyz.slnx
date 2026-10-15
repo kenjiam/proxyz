@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Proxyz.Core/Proxyz.Core.csproj" />
+    <Project Path="src/Proxyz.Cli/Proxyz.Cli.csproj" />
+    <Project Path="src/Proxyz.Windows/Proxyz.Windows.csproj" />
+    <Project Path="src/Proxyz.App/Proxyz.App.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Proxyz.Cli.Tests/Proxyz.Cli.Tests.csproj" />
+    <Project Path="tests/Proxyz.Core.Tests/Proxyz.Core.Tests.csproj" />
+    <Project Path="tests/Proxyz.Windows.Tests/Proxyz.Windows.Tests.csproj" />
+  </Folder>
+</Solution>

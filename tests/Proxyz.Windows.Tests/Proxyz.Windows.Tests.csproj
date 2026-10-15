@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup>
+  <TargetFramework>net10.0-windows</TargetFramework><OutputType>Exe</OutputType>
+  <EnableWindowsTargeting>true</EnableWindowsTargeting>
+ </PropertyGroup>
+ <ItemGroup><ProjectReference Include="../../src/Proxyz.Windows/Proxyz.Windows.csproj" /></ItemGroup>
+</Project>

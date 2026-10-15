@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "Profiles": [
+    {
+      "Id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+      "Name": "大学（例）",
+      "Note": "実際の組織の設定ではありません。",
+      "Settings": {
+        "Flags": 3,
+        "ProxyServer": "proxy.example.invalid:8080",
+        "ProxyBypass": "<local>;*.example.invalid",
+        "AutoConfigUrl": ""
+      }
+    },
+    {
+      "Id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+      "Name": "自宅（直接接続）",
+      "Note": "例",
+      "Settings": { "Flags": 1, "ProxyServer": "", "ProxyBypass": "", "AutoConfigUrl": "" }
+    }
+  ],
+  "Rules": [
+    {
+      "Id": "cccccccc-cccc-cccc-cccc-cccccccccccc",
+      "Name": "大学のネットワーク（例）",
+      "ProfileId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+      "Enabled": true,
+      "NetworkId": "11111111-1111-1111-1111-111111111111",
+      "SsidHex": null,
+      "Kind": "WiFi"
+    }
+  ],
+  "Preferences": {
+    "AutomationEnabled": false,
+    "Paused": true,
+    "ObserveWifi": false,
+    "PauseOnVpn": true,
+    "UnknownNetwork": "KeepCurrent",
+    "UiScale": 1.0
+  }
+}

@@ -1,0 +1,23 @@
+**/bin/
+**/obj/
+.vs/
+.idea/
+artifacts/
+.dotnet-home/
+TestResults/
+*.user
+*.suo
+*.pfx
+*.p12
+*.key
+*.log
+.DS_Store
+
+# Never commit real per-user application data.
+/ProxyzData/
+config.json
+journal.json
+*.bak
+*.tmp
+instance.lock
+events.jsonl*

@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Proxyz.Cli/Proxyz.Cli.csproj" />
+    <Compile Include="../Proxyz.Core.Tests/Fakes.cs" Link="Fakes.cs" />
+    <Compile Include="../Proxyz.Core.Tests/TestSuite.cs" Link="TestSuite.cs" />
+  </ItemGroup>
+</Project>

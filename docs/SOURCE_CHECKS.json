@@ -1,0 +1,47 @@
+{
+  "scope": "Structural source checks only; no .NET build, C# execution, native calls, or UI validation.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "xml-well-formedness",
+      "passed": true,
+      "detail": "15 XML documents parsed; no XAML compilation"
+    },
+    {
+      "name": "json-syntax",
+      "passed": true,
+      "detail": "3 JSON files parsed; no C# deserialization"
+    },
+    {
+      "name": "project-and-solution-paths",
+      "passed": true,
+      "detail": "5 projects; 5 existing project references"
+    },
+    {
+      "name": "xaml-code-behind-links",
+      "passed": true,
+      "detail": "5 code-behind pairs; names/explicit handlers only, not bindings or types"
+    },
+    {
+      "name": "csharp-delimiters-only",
+      "passed": true,
+      "detail": "47 C# files; delimiter balance only, not syntax/type validation"
+    },
+    {
+      "name": "local-documentation-links",
+      "passed": true,
+      "detail": "33 local documentation links exist (anchors/external links not checked)"
+    },
+    {
+      "name": "source-artifact-hygiene",
+      "passed": true,
+      "detail": "No packaged executables, keys, fonts, .env, or NotImplementedException stubs"
+    }
+  ],
+  "counts": {
+    "files_seen": 87,
+    "csharp_files": 47,
+    "csharp_lines": 2849,
+    "xaml_files": 6
+  }
+}

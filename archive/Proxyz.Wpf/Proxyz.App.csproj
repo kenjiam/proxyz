@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <!-- WPF owns the window/DPI lifecycle; WinForms is used only for NotifyIcon.
+         Keep PerMonitorV2 in the manifest rather than using WinForms startup APIs. -->
+    <NoWarn>$(NoWarn);WFO0003</NoWarn>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>Proxyz</AssemblyName>
+    <RootNamespace>Proxyz.App</RootNamespace>
+    <PublishTrimmed>false</PublishTrimmed>
+    <PublishAot>false</PublishAot>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Proxyz.Core/Proxyz.Core.csproj" />
+    <ProjectReference Include="../../src/Proxyz.Windows/Proxyz.Windows.csproj" />
+  </ItemGroup>
+</Project>
